@@ -1,0 +1,11 @@
+//List of buttons
+const buttons = document.querySelectorAll('button');
+//Input for displaying calculations
+const display = document.querySelector('.display')
+
+//Add an onclick to each button
+buttons.forEach(
+    function(button){
+        button.addEventListener("click", calculate)
+    }
+)
